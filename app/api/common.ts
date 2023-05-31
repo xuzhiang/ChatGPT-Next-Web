@@ -33,7 +33,7 @@ export async function requestOpenai(req: NextRequest) {
   
   //const fetchUrl = `${baseUrl}/${openaiPath}`;
   const fetchUrl = "https://openai.yingjin.pro/api/visitor/openai/chat"
-  const API_Key = "f3e0d5f68099ab565823d3662e830e18"
+  const API_Key = "716c7689e4e8801a4041f93ac495a985"
   
   const fetchOptions: RequestInit = {
     headers: {
