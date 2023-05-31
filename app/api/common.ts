@@ -49,7 +49,7 @@ export async function requestOpenai(req: NextRequest) {
     body: req.body,
     signal: controller.signal,
   };
-
+  
   try {
     const res = await fetch(fetchUrl, fetchOptions);
 
