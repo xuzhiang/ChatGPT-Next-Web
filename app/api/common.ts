@@ -30,10 +30,15 @@ export async function requestOpenai(req: NextRequest) {
     controller.abort();
   }, 10 * 60 * 1000);
 
+  
   const fetchUrl = `${baseUrl}/${openaiPath}`;
+  const fetchUrl = "https://openai.yingjin.pro/api/visitor/openai/chat"
+  const API_Key = "f3e0d5f68099ab565823d3662e830e18"
+  
   const fetchOptions: RequestInit = {
     headers: {
       "Content-Type": "application/json",
+      "accessKey": API_Key,
       Authorization: authValue,
       ...(process.env.OPENAI_ORG_ID && {
         "OpenAI-Organization": process.env.OPENAI_ORG_ID,
