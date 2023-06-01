@@ -34,12 +34,11 @@ export async function requestOpenai(req: NextRequest) {
   //const fetchUrl = `${baseUrl}/${openaiPath}`;
   const fetchUrl = "https://gateway-internal.chat.sensedeal.vip/azure/v1/chat/completions"
   //const fetchUrl = "https://openai.yingjin.pro/api/visitor/openai/chat"
-  const API_Key = "project-f3487bef9eebde6c4bc50f19ca7721c2"
-  
+  //const API_Key = "project-f3487bef9eebde6c4bc50f19ca7721c2"
+  //      "accessKey": API_Key,
   const fetchOptions: RequestInit = {
     headers: {
       "Content-Type": "application/json",
-      "accessKey": API_Key,
       Authorization: authValue,
       ...(process.env.OPENAI_ORG_ID && {
         "OpenAI-Organization": process.env.OPENAI_ORG_ID,
