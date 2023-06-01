@@ -14,7 +14,7 @@ export async function requestOpenai(req: NextRequest) {
   );
 
   let baseUrl = BASE_URL;
-
+ 
   if (!baseUrl.startsWith("http")) {
     baseUrl = `${PROTOCOL}://${baseUrl}`;
   }
