@@ -25,7 +25,7 @@ export async function requestOpenai(req: NextRequest) {
   if (process.env.OPENAI_ORG_ID) {
     console.log("[Org ID]", process.env.OPENAI_ORG_ID);
   }
-
+ 
   const timeoutId = setTimeout(() => {
     controller.abort();
   }, 10 * 60 * 1000);
