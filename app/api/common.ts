@@ -32,9 +32,9 @@ export async function requestOpenai(req: NextRequest) {
 
   
   //const fetchUrl = `${baseUrl}/${openaiPath}`;
-  const fetchUrl = "https://openai.yingjin.pro/v1/chat/completions"
+  const fetchUrl = "https://gateway-internal.chat.sensedeal.vip/azure/v1/chat/completions"
   //const fetchUrl = "https://openai.yingjin.pro/api/visitor/openai/chat"
-  const API_Key = "716c7689e4e8801a4041f93ac495a985"
+  const API_Key = "project-f3487bef9eebde6c4bc50f19ca7721c2"
   
   const fetchOptions: RequestInit = {
     headers: {
